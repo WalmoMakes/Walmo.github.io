@@ -1,0 +1,48 @@
+[data-theme="light"] {
+  --color-bg: #f2f2f2;
+  --color-font: #444;
+  --anchor-color: #0066cc;
+}
+[data-theme="dark"] {
+  --color-bg: #1b1b1b;
+  --color-font: #f2f2f2;
+  --anchor-color: #3392ff;
+}
+body.switched {
+    transition: color 0.6s, background-color 0.6s;
+}
+body {
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  font-family: 'Courier New', Courier, monospace;
+  margin:40px auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:18px; /* try 1.15rem rather than 18px */
+  padding:0 10px;
+}
+h1,h2,h3 {line-height:1.2}
+footer {text-align:center}
+dt, legend {font-weight:bold}
+dt {text-decoration: underline}
+figcaption {
+  text-align:center;
+  font-style:italic;
+  font-size:0.9rem;
+}
+caption{
+  font-weight:bold;
+  margin-bottom:10px;
+}
+fieldset {padding: 10px}
+.close-under {margin-bottom: -1rem} /* move the next line up by reducing the padding (margin) */
+a {color: var(--anchor-color)}
+
+/* Footnotes */
+sup a {text-decoration: none;} /* in-text footnote anchors */
+#footnotes {
+  font-size: 0.8em;
+  text-align: left;
+}
+#footnotes ol {list-style-type: decimal}
+#footnotes a {text-decoration: none}
