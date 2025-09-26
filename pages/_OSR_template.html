@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSR Template</title> <!--title here-->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/OSRstyle.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <h1>Page Title</h1>
+    <div class="two-column auto-number">
+      <section>
+          <h2>Heading: but longer</h2>
+          <p><dfn><abbr title="Lorem ipsum">Lorem</abbr></dfn> ipsum dolor sit amet consectetur adipisicing elit. Odit distinctio voluptatum dicta. Exercitationem dicta, vitae fuga quo nihil vel quas, ex magni sapiente, rem dolore soluta odio unde expedita amet.</p>
+          <p>This is a sample sentence with a footnote marker<sup><a href="#fn1" id="ref1" aria-describedby="fn1">1</a></sup>.</p>
+          <fieldset>
+            <legend>Fieldset Legend</legend> <!--optional-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </fieldset>
+          <p>Hic exercitationem error ut cumque doloribus dignissimos eligendi amet, aspernatur soluta et vitae similique dolorum quisquam, molestias voluptatem minima.</p>
+          <details>
+            <summary>More!</summary>
+            <p>Quibusdam adipisci maxime commodi repudiandae dolorum velit suscipit libero, fugiat<sup><a href="#fn2" id="ref2" aria-describedby="fn2">2</a></sup> et!</p>
+          </details>
+          <p>Omnis ipsum dolores similique deserunt eius iste quod iure, autem doloremque a ducimus voluptatum nisi fugiat distinctio officiis? Eius illum fugiat placeat quos nesciunt voluptatem! Atque consequuntur cumque culpa similique!</p>
+        </section>
+        <section>
+          <h3>Heading: but longer</h3>
+          <h4>Heading: but longer</h4>
+          <dl>
+            <dt>Beast of Bodmin</dt>
+            <dd>A large feline inhabiting Bodmin Moor.</dd>
+          </dl>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A aspernatur facilis quibusdam, laudantium expedita officia dolore nihil libero. Autem id magnam nulla harum nostrum nesciunt aut dolore minus hic aliquam.</p>
+          <p>Impedit adipisci minus officiis sit incidunt deleniti soluta hic quo nam quidem minima libero aliquid sequi facere id quod, natus aspernatur consequuntur cum odio. Nam ea veritatis totam asperiores reiciendis.</p>
+          <p class="close-under">This is a bulleted list:</p>
+          <ul>
+            <li>First item</li>
+            <li>Second item
+              <ul>
+                <li>Sub-item one</li>
+                <li>Sub-item two</li>
+              </ul>
+            </li>
+            <li>Third item</li>
+          </ul>
+          <p class="close-under">This is a numbered list:</p>
+          <ol>
+            <li>First item</li>
+            <li>Second item
+              <ol>
+                <li>Sub-item one</li>
+                <li>Sub-item two</li>
+              </ol>
+            </li>
+            <li>Third item</li>
+          </ol>
+          <hr>
+        </section>
+        <section>
+          <h4>Heading: but longer</h4>
+          <p>Text</p>
+          <div>
+            <p class="grid-caption">Headerless Table</p>
+              <div class="grid">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+              </div>
+          </div>
+          <p>However</p>
+          <table>
+            <caption>Column Table</caption>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+              <td>Data 3</td>
+            </tr>
+            <tr>
+              <td>Data 4</td>
+              <td>Data 5</td>
+              <td>Data 6</td>
+            </tr>
+          </table>
+          <p>But also</p>
+          <table class="row-table">
+            <caption>Row Table</caption>
+              <tr>
+                <th>Header 1</th>
+                <td>Data 1</td>
+                <td>Data 2</td>
+              </tr>
+              <tr>
+                <th>Header 2</th>
+                <td>Data 3</td>
+                <td>Data 4</td>
+              </tr>
+              <tr>
+                <th>Header 3</th>
+                <td>Data 5</td>
+                <td>Data 6</td>
+              </tr>
+          </table>
+          <p>And finally</p>
+          <table>
+            <caption>Roll Table</caption>
+            <thead>
+              <tr>
+                <th>Roll 1d6</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1-2</td>
+                <td>Result 1</td>
+              </tr>
+              <tr>
+                <td>3-4</td>
+                <td>Result 2</td>
+              </tr>
+              <tr>
+                <td>5-6</td>
+                <td>Result 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Heading: but longer</h2>
+          <figure>
+            <img src="/images/Meerstronaut_clean_square-crop-alpha.png" alt="Meerstronaut" style="width:100%">
+            <figcaption>Fig.1 - Meerstronaut</figcaption>
+          </figure>
+        </section>
+    </div>
+    <footer>
+      <hr>
+      <p><small><div id="footnotes"><ol>
+        <li id="fn1">This is the text for the first footnote. <a href="#ref1" aria-label="Back to reference">↩</a></li>
+        <li id="fn2">This is the text for the second footnote. <a href="#ref2" aria-label="Back to reference">↩</a></li>
+      </ol></div></small></p>
+      <p><small>© 2025 Walmo. All rights reserved.</small></p>
+      <p><small><a href="/index.html" aria-label="Homepage">🏠︎</a> <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light theme</button></small></p>
+    </footer>
+  <script src="/script.js" defer></script> <!--theme switching-->
+  </body>
+</html>
