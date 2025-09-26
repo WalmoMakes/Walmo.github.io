@@ -1,0 +1,2 @@
+# walmo
+Personal static website
