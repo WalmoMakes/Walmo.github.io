@@ -1,0 +1,14 @@
+/* Headings */
+h1,h2,h3,h4 {text-align:center}
+
+/* Tables */
+table {
+  width:100%;
+  border-collapse: collapse;
+  margin:20px 0;
+  border:1px dashed var(--color-font);
+}
+th, td {border:1px dashed var(--color-font)}
+th {border-bottom: var(--table-header-border-thickness) solid}
+td {text-align: center}
+.grid div {border:1px dashed var(--color-font)} /* headerless table */

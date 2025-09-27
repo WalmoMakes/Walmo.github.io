@@ -2,11 +2,13 @@
   --color-bg: #f2f2f2;
   --color-font: #444;
   --anchor-color: #0066cc;
+  --table-header-border-thickness: 2px;
 }
 [data-theme="dark"] {
   --color-bg: #1b1b1b;
   --color-font: #f2f2f2;
   --anchor-color: #3392ff;
+  --table-header-border-thickness: 2px;
 }
 body.switched {
     transition: color 0.6s, background-color 0.6s;
@@ -30,13 +32,39 @@ figcaption {
   font-style:italic;
   font-size:0.9rem;
 }
-caption{
+caption {
   font-weight:bold;
   margin-bottom:10px;
 }
 fieldset {padding: 10px}
 .close-under {margin-bottom: -1rem} /* move the next line up by reducing the padding (margin) */
 a {color: var(--anchor-color)}
+
+/* Tables */
+table {border-collapse: collapse}
+th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
+.row-table th {
+  border-bottom:none;
+  border-right: var(--color-font) var(--table-header-border-thickness) solid;
+}
+/* Easy Headerless Tables */
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+/* .grid div {border:1px dashed #ddd} */ /* uncomment this when I want to style the simple headerless table */
+.grid-caption{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive page column assignment */
+.two-column {column-count:2}
+@media (max-width: 600px) {
+  .two-column {column-count:1}
+}
 
 /* Footnotes */
 sup a {text-decoration: none;} /* in-text footnote anchors */
@@ -46,3 +74,20 @@ sup a {text-decoration: none;} /* in-text footnote anchors */
 }
 #footnotes ol {list-style-type: decimal}
 #footnotes a {text-decoration: none}
+
+/* Auto-number headings, optional */
+.auto-number {counter-set: HeadCount1 0 HeadCount2 0 HeadCount3 0} /* Initialize counters, allows you to reset the counter more than once on a page */
+.auto-number h2:before {
+	content: counter(HeadCount1)") ";
+	counter-increment: HeadCount1
+}
+.auto-number h2 {counter-set: HeadCount2 0 HeadCount3 0}
+.auto-number h3:before {
+	content: counter(HeadCount1)"." counter(HeadCount2)") ";
+	counter-increment: HeadCount2
+}
+.auto-number h3 {counter-set: HeadCount3 0}
+.auto-number h4:before {
+	content: counter(HeadCount1)"." counter(HeadCount2)"." counter(HeadCount3)") ";
+	counter-increment: HeadCount3
+}

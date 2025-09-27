@@ -1,0 +1,20 @@
+/* Ingredient list */
+.recipe-ingredient-list ul {columns: 2}
+.recipe-ingredient-list li {padding-right: 15px}
+
+/* Method numbered table */
+.recipe-method th, td {
+  border:1px solid var(--color-font);
+  padding: 10px;
+  padding-right: 30px;
+  vertical-align: text-top;
+}
+/* Auto-number method in table */
+.recipe-method {counter-set: MethodCount 0}
+.recipe-method td:before {
+	content: counter(MethodCount)") ";
+	counter-increment: MethodCount
+}
+.recipe-method p {
+	text-indent: 4%;
+}
