@@ -1,3 +1,4 @@
+h1, h2 {margin-bottom: -1rem} /* equivalent of "close-under */
 /* Ingredient list */
 .recipe-ingredient-list ul {columns: 2}
 .recipe-ingredient-list li {padding-right: 15px}
@@ -15,6 +16,5 @@
 	content: counter(MethodCount)") ";
 	counter-increment: MethodCount
 }
-.recipe-method p {
-	text-indent: 4%;
-}
+.recipe-method p {text-indent: 4%}
+.recipe-method th {text-align: left}

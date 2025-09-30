@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
-    background: #f2f2f2;
+    background: hsl(0, 0%, 95%);
     overflow: hidden;
 }
 
@@ -26,7 +26,7 @@ h2 {
     font-size: 14pt;
     font-style: italic;
     font-weight: lighter;
-    color: #BBB;
+    color: hsl(0, 0%, 73%);
 }
 
 .header {
@@ -50,7 +50,7 @@ h2 {
     position: fixed;
     display: block;
     width: 100%;
-    background: #f2f2f2;
+    background: hsl(0, 0%, 95%);
     transition: color 0.6s, background 0.6s;
     margin: 0;
     padding-top: 6px;
@@ -93,7 +93,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    background: #f2f2f2;
+    background: hsl(0, 0%, 95%);
 }
 
 .switched .container {
@@ -102,26 +102,26 @@ h2 {
 
 p {
     font-size: 13pt;
-    color: #888;
+    color: hsl(0, 0%, 53%);
     line-height: 1.7em;
     font-weight: lighter;
 }
 
 a {
     font-weight: 700;
-    color: #b97c2c;
+    color: hsl(34, 70%, 50%);
     font-family: 'Courier New', Courier, monospace;
     transition: color 0.6s;
     text-decoration: none;
 }
 
 a:hover {
-    color: #1b1b1b;
+    color: hsl(0, 0%, 11%);
     transition: color 0.1s;
 }
 
 strong {
-    color: #1b1b1b;
+    color: hsl(0, 0%, 11%);
     font-weight: bold;
 }
 
@@ -174,7 +174,7 @@ img {
 .end {
     text-align: center;
     font-weight: bold;
-    color: #1b1b1b;
+    color: hsl(0, 0%, 11%);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -188,12 +188,12 @@ img {
     right: 14px;
     top: 4px;
     user-select: none;
-    background: #f2f2f2;
+    background: hsl(0, 0%, 95%);
     transition: color 0.6s, background 0.6s;
 }
 
 #controls [disabled] {
-    color: #ccc;
+    color: hsl(0, 0%, 80%);
 }
 
 #controls>*:not(:last-child):after {
@@ -216,45 +216,45 @@ img {
 */
 
 body.dark {
-    background: #1b1b1b;
-    color: #f2f2f2;
+    background: hsl(0, 0%, 11%);
+    color: hsl(0, 0%, 95%);
 }
 
 .dark h2 {
-    color: #666;
+    color: hsl(0, 0%, 40%);
 }
 
 .dark .container {
-    background: #1b1b1b;
+    background: hsl(0, 0%, 11%);
 }
 
 .dark .written-in-ink {
-    background: #1b1b1b;
+    background: hsl(0, 0%, 11%);
 }
 
 .dark a {
-    color: #cc8f1a;
+    color: hsl(39, 77%, 45%);
     transition: color 0.6s;
 }
 
 .dark a:hover {
-    color: #f2f2f2;
+    color: hwb(0 95% 5%);
 }
 
 .dark strong {
-    color: #f2f2f2;
+    color: hsl(0, 0%, 95%);
 }
 
 .dark #controls [disabled] {
-    color: #444;
+    color: hsl(0, 0%, 27%);
 }
 
 .dark .end {
-    color: #f2f2f2;
+    color: hsl(0, 0%, 95%);
 }
 
 .dark #controls {
-    background: #1b1b1b;
+    background: hsl(0, 0%, 11%);
 }
 
 /* 
@@ -262,9 +262,9 @@ body.dark {
 */
 
 .id {
-	color: red;
+	color: rgb(255, 0, 0);
 }
 
 .ego {
-	color: blue;
+	color: rgb(0, 0, 255);
 }

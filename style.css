@@ -1,42 +1,70 @@
+:root {
+  --font: 'Courier New', Courier, monospace;
+}
 [data-theme="light"] {
-  --color-bg: #f2f2f2;
-  --color-font: #444;
-  --anchor-color: #0066cc;
+  --color-bg: hsl(0, 0%, 95%);
+  --color-font: hsl(0, 0%, 27%);
+  /* --anchor-color: hsl(210, 100%, 40%); */
+  --anchor-color: hsl(34, 70%, 50%);
   --table-header-border-thickness: 2px;
 }
 [data-theme="dark"] {
-  --color-bg: #1b1b1b;
-  --color-font: #f2f2f2;
-  --anchor-color: #3392ff;
+  --color-bg: hsl(0, 0%, 11%);
+  --color-font: hsl(0, 0%, 95%);
+  /* --anchor-color: hsl(212, 100%, 60%); */
+  --anchor-color: hsl(34, 62%, 45%);
   --table-header-border-thickness: 2px;
 }
 body.switched {transition: color 0.6s, background-color 0.6s}
 body {
   background-color: var(--color-bg);
   color: var(--color-font);
-  font-family: 'Courier New', Courier, monospace;
-  margin:40px auto;
-  max-width:650px;
-  line-height:1.6;
-  font-size:18px; /* try 1.15rem rather than 18px */
-  padding:0 10px;
+  font-family: var(--font);
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px; /* try 1.15rem rather than 18px */
+  padding: 0 10px;
 }
-h1,h2,h3 {line-height:1.2}
-footer {text-align:center}
+h1, h2, h3, h4 {
+  line-height:1.2;
+  color: var(--anchor-color);
+}
+footer {text-align: center}
+footer p {margin-bottom: -1rem}
 dt, legend {font-weight:bold}
 dt {text-decoration: underline}
 figcaption {
-  text-align:center;
-  font-style:italic;
-  font-size:0.9rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 caption {
-  font-weight:bold;
-  margin-bottom:10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 fieldset {padding: 10px}
-.close-under {margin-bottom: -1rem} /* move the next line up by reducing the padding (margin) */
-a {color: var(--anchor-color)}
+a {
+  color: var(--anchor-color);
+  text-underline-offset: 4px;
+}
+button {
+  font-family: var(--font);
+  color: var(--color-bg);
+  background-color: var(--color-font);
+  border-radius: 2px;
+}
+mark {
+  color: var(--color-font);
+  background-color: var(--anchor-color);
+}
+::selection {
+  color: var(--color-font);
+  background-color: var(--anchor-color);
+}
+
+/* move the next line up by reducing the padding (margin) */
+.close-under {margin-bottom: -1rem}
 
 /* Tables */
 table {border-collapse: collapse}
@@ -61,11 +89,11 @@ th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
 /* Responsive page column assignment */
 .two-column {column-count:2}
 @media (max-width: 600px) {
-  .two-column {column-count:1}
+  .two-column {column-count: 1}
 }
 
 /* Footnotes */
-sup a {text-decoration: none;} /* in-text footnote anchors */
+sup a {text-decoration: none} /* in-text footnote anchors */
 #footnotes {
   font-size: 0.8em;
   text-align: left;
