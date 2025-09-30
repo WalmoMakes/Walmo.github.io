@@ -7,6 +7,7 @@
   /* --anchor-color: hsl(210, 100%, 40%); */
   --anchor-color: hsl(34, 70%, 50%);
   --table-header-border-thickness: 2px;
+  --global-ui-filter: invert(51%) sepia(61%) saturate(728%) hue-rotate(354deg) brightness(95%) contrast(87%);
 }
 [data-theme="dark"] {
   --color-bg: hsl(0, 0%, 11%);
@@ -14,6 +15,7 @@
   /* --anchor-color: hsl(212, 100%, 60%); */
   --anchor-color: hsl(34, 62%, 45%);
   --table-header-border-thickness: 2px;
+  --global-ui-filter: invert(53%) sepia(45%) saturate(1000%) hue-rotate(354deg) brightness(91%) contrast(85%);
 }
 body.switched {transition: color 0.6s, background-color 0.6s}
 body {
@@ -62,6 +64,20 @@ mark {
   color: var(--color-font);
   background-color: var(--anchor-color);
 }
+.icon {
+  fill: var(--anchor-color);
+  position:relative;
+  display: inline;
+  text-align: center;
+  /* width: 100%; */
+  height: 100%;
+  width: 1em;
+  /* NB in html, viewBox="0 0 HeightInSVGFile WidthInSVGFile" */
+  /* for "global ui" icons, this is viewBox="0 0 820 820"*/
+}
+.global-ui {
+  filter: var(--global-ui-filter)
+}
 
 /* move the next line up by reducing the padding (margin) */
 .close-under {margin-bottom: -1rem}
@@ -79,7 +95,8 @@ th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
   grid-template-columns: auto auto auto;
   text-align: center;
 }
-/* .grid div {border:1px dashed #ddd} */ /* uncomment this when I want to style the simple headerless table */
+/* uncomment this when I want to style the simple headerless table */
+/* .grid div {border:1px dashed #ddd} */
 .grid-caption{
   text-align: center;
   font-weight: bold;
