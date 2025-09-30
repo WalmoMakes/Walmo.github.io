@@ -32,8 +32,6 @@ h1, h2, h3, h4 {
   line-height:1.2;
   color: var(--anchor-color);
 }
-footer {text-align: center}
-footer p {margin-bottom: -1rem}
 dt, legend {font-weight:bold}
 dt {text-decoration: underline}
 figcaption {
@@ -64,6 +62,13 @@ mark {
   color: var(--color-font);
   background-color: var(--anchor-color);
 }
+
+/* Footers */
+footer {text-align: center}
+footer p {margin-bottom: -1rem}
+footer div {margin-bottom: -1rem}
+
+/* Icons and logos */
 .icon {
   fill: var(--anchor-color);
   position:relative;
@@ -73,10 +78,15 @@ mark {
   height: 100%;
   width: 1em;
   /* NB in html, viewBox="0 0 HeightInSVGFile WidthInSVGFile" */
-  /* for "global ui" icons, this is viewBox="0 0 820 820"*/
+  /* for "global ui" icons, this is viewBox="0 0 800 800"*/
 }
 .global-ui {
   filter: var(--global-ui-filter)
+}
+
+/* Copyright date automation: yeah it makes it superfluous, but people think an old copyright year means an outdated website */
+.copyright:after {
+  content: "© 2025 Walmo. All rights reserved."; /* probably should automate this TODO */
 }
 
 /* move the next line up by reducing the padding (margin) */
@@ -133,4 +143,26 @@ sup a {text-decoration: none} /* in-text footnote anchors */
 .auto-number h4:before {
 	content: counter(HeadCount1)"." counter(HeadCount2)"." counter(HeadCount3)") ";
 	counter-increment: HeadCount3
+}
+
+/* Blog styles */
+.indent-p p {text-indent: 4%}
+.drop-cap p:first-child::first-letter {
+  /* color: var(--anchor-color); */
+  font-weight: bold;
+  initial-letter: 2; /* 2 lines drop height */
+  padding-right: 1%;
+} 
+.drop-cap p:first-child{
+  text-indent: 0%;
+}
+.subtitle {
+  color: var(--anchor-color);
+  font-style: italic;
+  font-size: smaller;
+  font-weight: bold;
+}
+.subtitle-date {
+  font-style: italic;
+  font-size: smaller;
 }
