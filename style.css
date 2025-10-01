@@ -4,16 +4,16 @@
 [data-theme="light"] {
   --color-bg: hsl(0, 0%, 95%);
   --color-font: hsl(0, 0%, 27%);
-  /* --anchor-color: hsl(210, 100%, 40%); */
-  --anchor-color: hsl(34, 70%, 50%);
+  /* --color-anchor: hsl(210, 100%, 40%); */
+  --color-anchor: hsl(34, 70%, 50%);
   --table-header-border-thickness: 2px;
   --global-ui-filter: invert(51%) sepia(61%) saturate(728%) hue-rotate(354deg) brightness(95%) contrast(87%);
 }
 [data-theme="dark"] {
   --color-bg: hsl(0, 0%, 11%);
   --color-font: hsl(0, 0%, 95%);
-  /* --anchor-color: hsl(212, 100%, 60%); */
-  --anchor-color: hsl(34, 62%, 45%);
+  /* --color-anchor: hsl(212, 100%, 60%); */
+  --color-anchor: hsl(34, 62%, 45%);
   --table-header-border-thickness: 2px;
   --global-ui-filter: invert(53%) sepia(45%) saturate(1000%) hue-rotate(354deg) brightness(91%) contrast(85%);
 }
@@ -30,7 +30,7 @@ body {
 }
 h1, h2, h3, h4 {
   line-height:1.2;
-  color: var(--anchor-color);
+  color: var(--color-anchor);
 }
 dt, legend {font-weight:bold}
 dt {text-decoration: underline}
@@ -45,7 +45,7 @@ caption {
 }
 fieldset {padding: 10px}
 a {
-  color: var(--anchor-color);
+  color: var(--color-anchor);
   text-underline-offset: 4px;
 }
 button {
@@ -56,11 +56,11 @@ button {
 }
 mark {
   color: var(--color-font);
-  background-color: var(--anchor-color);
+  background-color: var(--color-anchor);
 }
 ::selection {
   color: var(--color-font);
-  background-color: var(--anchor-color);
+  background-color: var(--color-anchor);
 }
 
 /* Footers */
@@ -70,7 +70,7 @@ footer div {margin-bottom: -1rem}
 
 /* Icons and logos */
 .icon {
-  fill: var(--anchor-color);
+  fill: var(--color-anchor);
   position:relative;
   display: inline;
   text-align: center;
@@ -148,7 +148,7 @@ sup a {text-decoration: none} /* in-text footnote anchors */
 /* Blog styles */
 .indent-p p {text-indent: 4%}
 .drop-cap p:first-child::first-letter {
-  /* color: var(--anchor-color); */
+  /* color: var(--color-anchor); */
   font-weight: bold;
   initial-letter: 2; /* 2 lines drop height */
   padding-right: 1%;
@@ -157,7 +157,7 @@ sup a {text-decoration: none} /* in-text footnote anchors */
   text-indent: 0%;
 }
 .subtitle {
-  color: var(--anchor-color);
+  color: var(--color-anchor);
   font-style: italic;
   font-size: smaller;
   font-weight: bold;
