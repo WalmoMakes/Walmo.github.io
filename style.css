@@ -1,5 +1,6 @@
 :root {
   --font: 'Courier New', Courier, monospace;
+  /* --mobile-width: 600px; */
 }
 [data-theme="light"] {
   --color-bg: hsl(0, 0%, 95%);
@@ -23,7 +24,8 @@ body {
   color: var(--color-font);
   font-family: var(--font);
   margin: 40px auto;
-  max-width: 650px;
+  /* max-width: 650px; */
+  max-width: 800px;
   line-height: 1.6;
   font-size: 18px; /* try 1.15rem rather than 18px */
   padding: 0 10px;
@@ -64,9 +66,11 @@ mark {
 }
 
 /* Footers */
-footer {text-align: center}
-footer p {margin-bottom: -1rem}
-footer div {margin-bottom: -1rem}
+footer {
+  text-align: center;
+  p {margin-bottom: -1rem;}
+  div {margin-bottom: -1rem;}
+}
 
 /* Icons and logos */
 .icon {
@@ -114,9 +118,9 @@ th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
 }
 
 /* Responsive page column assignment */
-.two-column {column-count:2}
+.two-column {column-count: 2;}
 @media (max-width: 600px) {
-  .two-column {column-count: 1}
+  .two-column {column-count: 1;}
 }
 
 /* Footnotes */
@@ -124,9 +128,9 @@ sup a {text-decoration: none} /* in-text footnote anchors */
 #footnotes {
   font-size: 0.8em;
   text-align: left;
+  ol {list-style-type: decimal;}
+  a {text-decoration: none;}
 }
-#footnotes ol {list-style-type: decimal}
-#footnotes a {text-decoration: none}
 
 /* Auto-number headings, optional */
 .auto-number {counter-set: HeadCount1 0 HeadCount2 0 HeadCount3 0} /* Initialize counters, allows you to reset the counter more than once on a page */

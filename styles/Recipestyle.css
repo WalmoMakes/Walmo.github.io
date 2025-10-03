@@ -1,20 +1,50 @@
 h1, h2 {margin-bottom: -1rem} /* equivalent of "close-under */
+
 /* Ingredient list */
-.recipe-ingredient-list ul {columns: 2}
-.recipe-ingredient-list li {padding-right: 15px}
+.recipe-ingredient-list {
+  ul {columns: 2;}
+  li {padding-right: 15px;}
+}
 
 /* Method numbered table */
-.recipe-method th, td {
-  border:1px solid var(--color-font);
-  padding: 10px;
-  padding-right: 30px;
-  vertical-align: text-top;
+.recipe-method {
+  counter-set: MethodCount 0; /* reset auto-numbering */
+   
+  th, td {
+    border:1px solid var(--color-font);
+    vertical-align: text-top;
+    
+    padding: 0em;
+    padding-left: 1em;
+  }
+
+  p {text-indent: 4%;}
+    
+  th {
+    text-align: left;
+    min-width: 10em;
+    ul {
+      padding: 0.5em;
+      margin: 0em;
+      margin-right: 0.5em;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .recipe-method th {
+    min-width: 8em;
+  }
 }
 /* Auto-number method in table */
-.recipe-method {counter-set: MethodCount 0}
 .recipe-method td:before {
 	content: counter(MethodCount)") ";
 	counter-increment: MethodCount
 }
-.recipe-method p {text-indent: 4%}
-.recipe-method th {text-align: left}
+/* .indent {text-indent: 4%;} */
+.chef-note {
+  text-indent: 4%;
+  p:first-child {
+    margin-bottom: -1rem;
+    text-indent: 0%;
+  }
+}

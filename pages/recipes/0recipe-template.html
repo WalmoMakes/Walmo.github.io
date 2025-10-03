@@ -10,10 +10,16 @@
   <body>
     <section>
       <h1>Recipe Title</h1>
+      <img src="images/Star (1).png" style="width: 10%; float: right;">
     </section>
     <section>
       <p>Category: <a href="recipe-book.html#cake">Cake</a> | Status: Tested</p>
-      </div>
+    </section>
+    <section>
+      <details>
+        <summary>Personal connection to recipe. (summarise in this line)</summary>
+        <p>This is the place I'd hide personal stories reg. recipes, if they are relevant and might be interesting to others.</p>
+      </details>
     </section>
     <section>
       <h2>Ingredients</h2>
@@ -36,26 +42,31 @@
       <p>Cook Time: <b>50min</b> | Servings: <b>8 Servings</b></p>
       <table class="recipe-method">
         <tr>
-          <th>Ingredient
-            <br>Ingredient
-            <br>Ingredient
-          </th>
+          <th><ul>
+            <li>Ingredient</li>
+            <li>Ingredient</li>
+          </ul></th>
           <td>Step
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed itaque iure nam harum dolorum blanditiis nemo, quisquam saepe. Cumque ex dolorum a possimus?</p>
             <p>Sit temporibus beatae similique rem accusantium?</p>
           </td>
         </tr>
         <tr>
-          <th>Ingredient(s)</th>
+          <th><ul>
+            <li>Ingredient</li>
+          </ul></th>
           <td>Step</td>
         </tr>
         <tr>
-          <th>Ingredient(s)</th>
+          <th><ul>
+            <li>Ingredient</li>
+          </ul></th>
           <td>Step</td>
         </tr>
       </table>
     </section>
     <section>
+      <p><img src="images/Wedding-Cake.png" alt="An illustration of a wedding cake with two people as cake toppers" style="width: 25%; float: right;"></p>
       <h2>Variations</h2>
       <p class="close-under"><u>Variation 1</u>: ingredient1, ingredient2</p>
       <ol>
@@ -63,13 +74,19 @@
         <li>Item</li>
       </ol>
     </section>
-    <h2>Chef's Notes</h2>
-      <p class="close-under">There must be a more interesting way of presenting CN than this.</p>
-    <p style="text-align: right"><img src="images/Wedding-Cake.png" alt="An illustration of a wedding cake with two people as cake toppers" style="width:50%"></p>
+    <section>
+      <h2>Chef's Notes</h2>
+      <p>There must be a more interesting way of presenting CN than this.</p>
+      <br>
+      <div class="chef-note">
+        <p>Try substituting neutral oil for melted, salted butter. Yum!</p>
+        <p>If using butter or butter + oil to grease irons, the waffles will colour sooner than with just oil, but will still need the full time to cook through</p>
+      </div>
+    </section>
     <footer>
       <hr>
       <small><div class="copyright"></div></small>
-      <p><small><a href="Recipe-book.html">Recipe Book</a> &middot; <a href="tips and reading guide">Tips and Reading Guide</a></small></p>
+      <p><small><a href="recipe-book.html">Recipe Book</a> &middot; <a href="cooking-tips.html">Tips and Reading Guide</a></small></p>
       <p><small><a href="/index.html" aria-label="Homepage"><svg class="icon global-ui" viewBox="0 0 820 820" style=><use xlink:href="/icons/home-icon-global-ui.svg"></svg></a> &middot; <button type="button" data-theme-toggle aria-label="Change to dark theme">Change to dark theme</button></small></p>
     </footer>
     <script src="/script.js" defer></script> <!--theme switching-->
