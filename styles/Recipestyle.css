@@ -13,7 +13,6 @@ h1, h2 {margin-bottom: -1rem} /* equivalent of "close-under */
   th, td {
     border:1px solid var(--color-font);
     vertical-align: text-top;
-    
     padding: 0em;
     padding-left: 1em;
   }

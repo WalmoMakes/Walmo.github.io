@@ -31,8 +31,9 @@ body {
   padding: 0 10px;
 }
 h1, h2, h3, h4 {
-  line-height:1.2;
+  line-height: 1.2;
   color: var(--color-anchor);
+  margin-bottom: -1rem;
 }
 dt, legend {font-weight:bold}
 dt {text-decoration: underline}
@@ -97,10 +98,15 @@ footer {
 .close-under {margin-bottom: -1rem}
 
 /* Tables */
-table {border-collapse: collapse}
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td {border: 1px dashed var(--color-font);}
 th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
 .row-table th {
-  border-bottom:none;
+  border-bottom: 1px dashed var(--color-font);
   border-right: var(--color-font) var(--table-header-border-thickness) solid;
 }
 /* Easy Headerless Tables */
