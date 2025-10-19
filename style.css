@@ -116,7 +116,10 @@ th {border-bottom: var(--color-font) var(--table-header-border-thickness) solid}
   text-align: center;
 }
 /* uncomment this when I want to style the simple headerless table */
-/* .grid div {border:1px dashed #ddd} */
+.grid div {
+  border: 1px dashed var(--color-font);
+  margin: -1px 0 0 -1px;
+}
 .grid-caption{
   text-align: center;
   font-weight: bold;
