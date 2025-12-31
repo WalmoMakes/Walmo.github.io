@@ -91,7 +91,7 @@ footer {
 
 /* Copyright date automation: yeah it makes it superfluous, but people think an old copyright year means an outdated website */
 .copyright:after {
-  content: "© 2025 Walmo. All rights reserved."; /* probably should automate this TODO */
+  content: "© 2026 Walmo. All rights reserved."; /* probably should automate this TODO */
 }
 
 /* move the next line up by reducing the padding (margin) */
